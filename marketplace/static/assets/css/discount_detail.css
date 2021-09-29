@@ -1,0 +1,19 @@
+.discount-div {
+    margin: 50px;
+    margin-top: -50px;
+}
+
+.discount-characteristic{
+    font-weight: bold;
+    font-size: 1.17em;
+    line-height: 1.3em;
+}
+
+li{
+    margin-bottom: 15px;
+}
+
+.discount-img{
+    max-height: 250px;
+    max-width: 100%;
+}

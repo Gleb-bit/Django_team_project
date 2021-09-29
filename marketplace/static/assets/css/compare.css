@@ -1,0 +1,21 @@
+.Compare-btn{
+    border: 0;
+}
+
+.Compare-btn:hover{
+    border-bottom: 1px solid blue;
+    cursor: pointer;
+}
+
+.Card-btn:hover{
+    border-bottom: 1px solid blue;
+    cursor: pointer;
+}
+
+.philosophy{
+    margin-left: 100px
+}
+
+.insufficient-data{
+    margin-left: 50px
+}

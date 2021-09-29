@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block title %}{% trans 'Cart' %}{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'assets/css/cart.css' %}">
+{% endblock head %}
+
+{% block content %}
+  <div class="Middle Middle_top">
+    <div class="Middle-top">
+      <div class="wrap">
+        <div class="Middle-header">
+          <h1 class="Middle-title">{% trans 'Cart' %}
+          </h1>
+          <ul class="breadcrumbs Middle-breadcrumbs">
+            <li class="breadcrumbs-item"><a href="{% url 'index' %}">{% trans 'Home' %}</a>
+            </li>
+            <li class="breadcrumbs-item breadcrumbs-item_current"><span>{% trans 'Cart' %}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="Section">
+      <div class="wrap wrap-main">
+
+      {% if lines.count > 0 %}
+        <form class="form Cart" action="#" method="post">
+          {% for line in lines %}
+          <div class="Cart-product" data-line="{{ line.id }}">
+            <div class="Cart-block Cart-block_row">
+              <div class="Cart-block Cart-block_pict Cart-product-img-div">
+                <a class="Cart-pict" href="{% url 'product' line.product.slug %}">
+                  <img class="Cart-img" src="{{ MEDIA_URL }}{{ line.product.img }}" alt="card.jpg"/>
+                </a>
+                  {% if line.discount_percent %}
+                      <div class="Card-sale">-{{ line.discount_percent }}%
+                      </div>
+                  {% endif %}
+              </div>
+              <div class="Cart-block Cart-block_info">
+                  <a class="Cart-title" href="{% url 'product' line.product.slug %}">
+                      {{ line.product.name }}
+                  </a>
+              </div>
+            </div>
+            <div class="Cart-block Cart-block_row">
+            </div>
+            <div class="Cart-block Cart-block_row">
+              <div class="Cart-block Cart-block_seller">
+                  <a class="Cart-title" href="{% url 'shop-detail' line.shop.id %}">
+                    <strong>{{ line.shop.name }}</strong>
+                  </a>
+              </div>
+              <div class="Cart-block">
+                  <img src="{{ MEDIA_URL }}{{ line.shop.img }}" alt="{{ line.shop.name }}" style="width: 50px" />
+              </div>
+              <div class="Cart-block">
+                  {% trans 'Stock balance' %}: <span class="Stock-balance" data-line="{{ line.id }}">{{ line.warehouse_amount }}</span>
+              </div>
+              <div class="Cart-block Cart-block_price">
+              {% if line.discount_price != line.price %}
+                <div class="Cart-price">{{ line.discount_price}}$</div>
+                <div class="Cart-price Cart-price_old">{{ line.price }}$</div>
+              {% else %}
+                <div class="Cart-price">{{ line.price }}$</div>
+              {% endif %}
+              </div>
+              <div class="Cart-block Cart-block_amount">
+                <div class="Cart-amount">
+                  <div class="Amount">
+                    <button class="Amount-remove" type="button" data-line="{{ line.id }}">
+                    </button>
+                    <input class="Amount-input form-input" data-line="{{ line.id }}" name="amount" type="text" value="{{ line.quantity }}"/>
+                    <button class="Amount-add" type="button" data-line="{{ line.id }}">
+                    </button>
+                  </div>
+                    <span class="Cart-accept-message" data-line="{{ line.id }}"></span>
+                </div>
+              </div>
+                <div class="Cart-block">
+                    <button class="Cart-accept" data-line="{{ line.id }}">{% trans 'Accept' %}</button>
+                </div>
+
+              <div class="Cart-block Cart-block_delete">
+                  <button class="Cartline-delete" data-line="{{ line.id }}">
+                      <img src="{{ MEDIA_URL }}icons/card/delete.svg" alt="delete.svg"/>
+                  </button>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+          <div class="Cart-total">
+            <div class="Cart-block Cart-block_total">
+                <strong class="Cart-title">{% trans 'Total' %}:</strong>
+                <div class="Cart-cost-total">
+                    {% if cart.cost == cart.discount_cost %}
+                        <span class="Cart-price Cart-total-cost">{{ cart.discount_cost }}$</span>
+                    {% else %}
+                        <span class="Cart-price Cart-total-cost">{{ cart.discount_cost }}$</span>
+                        <span class="Cart-price_old">{{ cart.cost }}$</span>
+                    {% endif %}
+                </div>
+
+            </div>
+            <div class="Cart-block">
+                <button class="btn btn_danger btn_lg Cart-clear">{% trans 'Clear cart' %}</button>
+                <a class="btn btn_success btn_lg" href="{% url 'order-create' %}">{% trans 'Checkout' %}</a>
+            </div>
+          </div>
+        </form>
+      {% else %} <p>{% trans 'Your cart is empty' %}</p>
+      {% endif %}
+
+      </div>
+    </div>
+  </div>
+{% csrf_token %}
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'assets/js/common.js' %}"></script>
+<script src="{% static 'assets/js/cart.js' %}"></script>
+<script type="text/javascript">
+ $(document).ready(function () {
+    handle_delete_cartline()
+    handle_clear_cart()
+    handle_accept_amount()
+});
+</script>
+{% endblock js %}

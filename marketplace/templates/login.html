@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Sign in" %}{% endblock %}
+{% block content %}
+    <h1 style="text-align: center">{% trans "Sign in" %}</h1>
+    <a style="margin-left: 50px;" class="ControlPanel-title"
+       href="{% url 'password_reset' %}">{% trans "Did you forget password?" %}</a>
+    <form method="post" style="margin-left: 50px">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="{% trans 'Sign in' %}">
+    </form>
+{% endblock content %}

@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block title %} {% trans 'Product compare' %} {% endblock title %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'assets/css/compare.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/modal_add_to_cart.css' %}">
+{% endblock head %}
+
+{% block content %}
+
+<div class="Middle Middle_top">
+    <div class="Middle-top">
+      <div class="wrap">
+        <div class="Middle-header">
+          <h1 class="Middle-title">{% trans 'Product compare' %}
+          </h1>
+          <ul class="breadcrumbs Middle-breadcrumbs">
+            <li class="breadcrumbs-item"><a href="{% url 'index' %}">{% trans 'Home' %}</a>
+            </li>
+            <li class="breadcrumbs-item breadcrumbs-item_current"><span>{% trans 'Product compare' %}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% if compare_products.count > 1 %}
+    <div class="Section">
+      <div class="wrap">
+        <div class="Compare">
+          <div class="Compare-header">
+            <label class="toggle Compare-checkDifferent">
+              <input type="checkbox" name="differentFeature" value="true" checked="checked"/>
+                <span class="toggle-box"></span>
+                <span class="toggle-text">{% trans 'Only different characteristics' %}</span>
+            </label>
+          </div>
+          <div class="Compare-row">
+            <div class="Compare-title Compare-title_blank">
+            </div>
+            <div class="Compare-products">
+
+              {% for compare_product in compare_products %}
+              <div class="Compare-product">
+                <div class="Compare-nameProduct Compare-nameProduct_main">{{ compare_product.product.name }}
+                </div>
+                <div class="Compare-feature">
+                    <a href="{% url 'product' compare_product.product.slug %}">
+                        <img class="Compare-pict" src="{{ MEDIA_URL }}{{ compare_product.product.img }}" alt="card.jpg"/>
+                    </a>
+                </div>
+              </div>
+                {% endfor %}
+
+            </div>
+          </div>
+          <div class="Compare-row">
+            <div class="Compare-title Compare-title_blank">
+            </div>
+            <div class="Compare-products">
+
+              {% for compare_product in compare_products %}
+              <div class="Compare-product">
+                <div class="Compare-nameProduct">{{ compare_product.product.name }}
+                </div>
+                <div class="Compare-feature">
+                    <button class="Card-btn Cart-add" data-product-id="{{ compare_product.product.id}}">
+                      <img src="{{ MEDIA_URL }}icons/card/cart.svg" alt="cart.svg"/>
+                    </button>
+                    <form method="post" action="{% url 'compare-remove' compare_product.product.id %}">
+                        {% csrf_token %}
+                        <input type="hidden" name="next" value="{{ request.path }}">
+                            <button class="Compare-btn" >
+                                <img src="{% static 'assets/img/icons/card/delete.svg' %}" alt="delete.svg"/>
+                            </button>
+                    </form>
+                </div>
+              </div>
+              {% endfor %}
+
+            </div>
+          </div>
+
+          {% if characteristics %}
+              {% for CompareRow in characteristics %}
+              <div class="Compare-row {% if CompareRow.hide %}Compare-row_hide{% endif %}">
+                <div class="Compare-title">{{ CompareRow.characteristic_name }}
+                </div>
+                <div class="Compare-products">
+                    {% for characteristic_value in CompareRow.product_characteristic_values %}
+                      <div class="Compare-product">
+                        <div class="Compare-feature">{{ characteristic_value }}
+                        </div>
+                      </div>
+                    {% endfor %}
+                </div>
+              </div>
+              {% endfor %}
+          {% else %}
+              <h4 class='philosophy'><i>{{ philosophical_phrase }}</i></h4>
+          {% endif %}
+
+        <div class="Compare-row {% if CompareRow.hide %}Compare-row_hide{% endif %}">
+            <div class="Compare-title">{% trans 'Price' %}
+                </div>
+            <div class="Compare-products">
+            {% for compare_product in compare_products %}
+                <div class="Compare-product">
+                    <div class="Compare-nameProduct">{{ compare_product.product.name }}
+                    </div>
+                    <div class="Compare-feature">
+                        {% if compare_product.product.is_discounted %}
+                            <strong class="Compare-priceOld">
+                                ${{ compare_product.product.get_price }}
+                            </strong>
+                            <strong class="Compare-price">
+                                ${{ compare_product.product.get_discounted_price }}
+                            </strong>
+                        {% else %}
+                            <strong class="Compare-price">
+                                ${{ compare_product.product.get_price }}
+                            </strong>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+
+    </div>
+      {% else %}
+        <h2 class='insufficient-data'>{% trans 'Insufficient data to compare' %}</h2>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% include 'cart/modal_add_to_cart.html' %}
+{% endblock content %}
+
+{% block js %}
+<script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'assets/js/common.js' %}"></script>
+<script src="{% static 'assets/js/modal_add_to_cart.js' %}"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        handle_modal()
+});
+</script>
+{% endblock js %}

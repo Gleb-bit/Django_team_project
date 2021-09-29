@@ -1,0 +1,46 @@
+.modalwindow {
+    position: fixed;
+    display: none; /* Скрываем модальное окно по умолчанию */
+    z-index: 9999;
+    width: 900px;
+    background: white;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+}
+h2 {
+    background-color: rgb(41,97,202);
+    padding: 15px;
+    font-size: 25px;
+    color: white;
+    margin: 0;
+    font-family: arial;
+    text-align: center;
+}
+.modal__content {
+    padding: 20px;
+    font-size: 22px;
+    line-height: 30px;
+}
+.close {
+    float: right;
+    margin-top: -47px;
+    margin-right: 25px;
+    font-size: 20px;
+    width: 17px;
+    height: 17px;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: arial;
+}
+
+.Warehouse-delimiter{
+    margin-right: 20px;
+}

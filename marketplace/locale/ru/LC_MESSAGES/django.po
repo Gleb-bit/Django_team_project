@@ -1,0 +1,1267 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-25 16:49+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: ajax/views.py:159 templates/cart/cart.html:115
+msgid "Your cart is empty"
+msgstr "Ваша корзина пуста"
+
+#: catalog/forms.py:11 main/models.py:342
+msgid "Review"
+msgstr "Отзыв"
+
+#: catalog/forms.py:12 main/models.py:20 main/models.py:53 main/models.py:149
+#: templates/catalog/catalog_list.html:49
+msgid "Name"
+msgstr "Имя"
+
+#: catalog/forms.py:13 main/models.py:154 main/models.py:330
+#: payment/forms.py:23 templates/base.html:310
+msgid "Email"
+msgstr "Электронная почта"
+
+#: compare/models.py:11 compare/models.py:39 main/models.py:114
+#: main/models.py:132 main/models.py:173 main/models.py:315 main/models.py:328
+#: main/models.py:364 templates/catalog/product.html:16
+#: templates/catalog/product.html:21 templates/discount/discount_detail.html:53
+msgid "Product"
+msgstr "Товар"
+
+#: compare/models.py:12 main/models.py:314 main/models.py:348
+msgid "User"
+msgstr "Пользователь"
+
+#: compare/models.py:13
+msgid "Date added"
+msgstr "Дата добавления"
+
+#: compare/models.py:19
+msgid "Compare product"
+msgstr "Товар сравнения"
+
+#: compare/models.py:20
+msgid "Compare products"
+msgstr "Товары сравнения"
+
+#: compare/models.py:26
+msgid "Characteristic name"
+msgstr "Наименование характеристики"
+
+#: compare/models.py:32 compare/models.py:41 templates/catalog/product.html:131
+msgid "Characteristic"
+msgstr "Характеристика"
+
+#: compare/models.py:33
+msgid "Characteristics"
+msgstr "Характеристики"
+
+#: compare/models.py:43
+msgid "Characteristic value"
+msgstr "Значение характеристики"
+
+#: compare/models.py:49
+msgid "Product characteristic"
+msgstr "Характеристика товара"
+
+#: compare/models.py:50
+msgid "Product characteristics"
+msgstr "Характеристики товара"
+
+#: main/admin.py:24
+msgid "Set banners is_active flag"
+msgstr "Установить флаг активности для баннеров"
+
+#: main/admin.py:25
+msgid "Remove banners is_active flag"
+msgstr "Снять флаг активности для баннеров"
+
+#: main/forms.py:12
+msgid "Photo"
+msgstr "Аватарка"
+
+#: main/models.py:21 main/models.py:59 main/models.py:194 main/models.py:333
+msgid "Is active"
+msgstr "Активный"
+
+#: main/models.py:24
+msgid "Parent category"
+msgstr "Родительская категория"
+
+#: main/models.py:25 main/models.py:62
+msgid "Sort index"
+msgstr "Индекс сортировки"
+
+#: main/models.py:26 main/models.py:57 main/models.py:150 main/models.py:193
+msgid "Image"
+msgstr "Изображение"
+
+#: main/models.py:38 main/models.py:56
+msgid "Category"
+msgstr "Категория"
+
+#: main/models.py:39 templates/base.html:193
+msgid "Categories"
+msgstr "Категории"
+
+#: main/models.py:58 main/models.py:131 main/models.py:151
+#: templates/catalog/product.html:99
+msgid "Description"
+msgstr "Описания"
+
+#: main/models.py:60
+msgid "Sells"
+msgstr "Продажи"
+
+#: main/models.py:61
+msgid "Released"
+msgstr "Выпущен"
+
+#: main/models.py:115
+msgid "Products"
+msgstr "Товары"
+
+#: main/models.py:130 main/models.py:190
+msgid "Title"
+msgstr "Заголовок"
+
+#: main/models.py:133 templates/discount/discount_detail.html:45
+msgid "Discount percentage"
+msgstr "Процент скидки"
+
+#: main/models.py:134 main/models.py:160 main/models.py:174 main/models.py:363
+#: templates/catalog/catalog_list.html:54 templates/payment/oneorder.html:131
+#: templates/payment/order.html:229 templates/shop/shop_detail.html:5
+msgid "Shop"
+msgstr "Продавец"
+
+#: main/models.py:135
+msgid "Discount start datetime"
+msgstr "Дата начала скидки"
+
+#: main/models.py:136
+msgid "Discount end datetime"
+msgstr "Дата окончания скидки"
+
+#: main/models.py:137
+msgid "Discount created datetime"
+msgstr "Дата создания скидки"
+
+#: main/models.py:143
+msgid "Discount"
+msgstr "Скидка"
+
+#: main/models.py:144 templates/base.html:146
+#: templates/discount/discount_detail.html:16
+#: templates/discount/discount_detail.html:21
+#: templates/discount/discount_list.html:16
+#: templates/discount/discount_list.html:21
+msgid "Discounts"
+msgstr "Скидки"
+
+#: main/models.py:152 payment/forms.py:20 templates/base.html:310
+#: templates/payment/oneorder.html:52 templates/payment/order.html:66
+#: templates/payment/order.html:164 templates/private_office/profile.html:95
+#: templates/shop/shop_detail.html:63
+msgid "Phone"
+msgstr "Телефон"
+
+#: main/models.py:153 templates/base.html:311 templates/payment/order.html:121
+#: templates/payment/order.html:190
+msgid "Address"
+msgstr "Адрес"
+
+#: main/models.py:161 templates/base.html:143
+#: templates/catalog/product.html:100
+msgid "Shops"
+msgstr "Магазины"
+
+#: main/models.py:175 main/models.py:365
+msgid "Product price"
+msgstr "Цена товара"
+
+#: main/models.py:176
+msgid "Product amount"
+msgstr "Количестов товара"
+
+#: main/models.py:177
+msgid "Free shipping"
+msgstr "Бесплатная доставка"
+
+#: main/models.py:183
+msgid "Warehouse"
+msgstr "Склад"
+
+#: main/models.py:184
+msgid "Warehouses"
+msgstr "Склады"
+
+#: main/models.py:191
+msgid "Content"
+msgstr "Содержимое"
+
+#: main/models.py:192
+msgid "Link"
+msgstr "Ссылка"
+
+#: main/models.py:200
+msgid "Banner"
+msgstr "Баннер"
+
+#: main/models.py:201
+msgid "Banners"
+msgstr "Баннеры"
+
+#: main/models.py:213 main/models.py:226 main/models.py:238
+msgid "name"
+msgstr "Название"
+
+#: main/models.py:227
+msgid "base_price"
+msgstr "цена"
+
+#: main/models.py:228
+msgid "extra_price"
+msgstr "Дополнительная цена"
+
+#: main/models.py:229
+msgid "free_shipping_threshold"
+msgstr "Бесплатная доставка"
+
+#: main/models.py:247
+msgid "comment"
+msgstr "комментарий"
+
+#: main/models.py:248
+msgid "customer"
+msgstr "пользователь"
+
+#: main/models.py:249
+msgid "total price"
+msgstr "суммарная цена"
+
+#: main/models.py:250
+msgid "date"
+msgstr "дата"
+
+#: main/models.py:251
+msgid "payment method"
+msgstr "метод оплата"
+
+#: main/models.py:253
+msgid "delivery method"
+msgstr "метод доставки"
+
+#: main/models.py:255
+msgid "payment state"
+msgstr "статус платежа"
+
+#: main/models.py:257
+msgid "text_error"
+msgstr "текст ошибки"
+
+#: main/models.py:258
+msgid "city"
+msgstr "город"
+
+#: main/models.py:259
+msgid "address"
+msgstr "адрес"
+
+#: main/models.py:260
+msgid "Creation time"
+msgstr "Создан"
+
+#: main/models.py:266
+msgid "user"
+msgstr "пользователь"
+
+#: main/models.py:267
+msgid "first name"
+msgstr "имя"
+
+#: main/models.py:268
+msgid "last name"
+msgstr "фамилия"
+
+#: main/models.py:269
+msgid "patronymic"
+msgstr "отчество"
+
+#: main/models.py:270
+msgid "photo"
+msgstr "аватар"
+
+#: main/models.py:272
+msgid "phone"
+msgstr "телефон"
+
+#: main/models.py:273
+msgid "birth date"
+msgstr "дата рождения"
+
+#: main/models.py:274
+msgid "mail"
+msgstr "электронная почта"
+
+#: main/models.py:277 templates/password_change.html:38
+#: templates/password_change_done.html:38
+#: templates/private_office/last_products.html:46
+#: templates/private_office/private_office_list.html:41
+#: templates/private_office/profile.html:12
+#: templates/private_office/profile.html:17
+#: templates/private_office/profile.html:40
+msgid "Profile"
+msgstr "Профиль"
+
+#: main/models.py:278
+msgid "Profiles"
+msgstr "Профили"
+
+#: main/models.py:306
+msgid "File"
+msgstr "Файл"
+
+#: main/models.py:307
+msgid "Mail"
+msgstr "Электронная почта"
+
+#: main/models.py:308
+msgid ""
+"(Enter the mail to which the notification about the end of import will be "
+"sent)"
+msgstr "(Введите почту, на которую будет отправлено уведомление об окончании импорта)"
+
+#: main/models.py:309 templates/payment/oneorder.html:90
+#: templates/private_office/private_office_list.html:107
+msgid "Status"
+msgstr "Статус"
+
+#: main/models.py:319
+msgid "Recent Product"
+msgstr "Просмотренный товар"
+
+#: main/models.py:320
+msgid "Recent Products"
+msgstr "Просмотренные товары"
+
+#: main/models.py:329
+msgid "Author"
+msgstr "Автор"
+
+#: main/models.py:331
+msgid "Text"
+msgstr "Текст"
+
+#: main/models.py:332
+msgid "publication date"
+msgstr "дата публикации"
+
+#: main/models.py:343 templates/catalog/catalog_list.html:107
+#: templates/catalog/product.html:102 templates/catalog/product.html:211
+msgid "Reviews"
+msgstr "Отзывы"
+
+#: main/models.py:349
+msgid "Created"
+msgstr "Создан"
+
+#: main/models.py:350
+msgid "Is payed"
+msgstr "Оплачен"
+
+#: main/models.py:351
+msgid "Cost"
+msgstr "Стоимость"
+
+#: main/models.py:354 main/models.py:362 templates/cart/cart.html:5
+#: templates/cart/cart.html:16 templates/cart/cart.html:21
+msgid "Cart"
+msgstr "Корзина"
+
+#: main/models.py:355
+msgid "Carts"
+msgstr "Корзины"
+
+#: main/models.py:366
+msgid "Quantity"
+msgstr "Количество"
+
+#: main/models.py:369
+msgid "Cartline"
+msgstr "Позиция корзины"
+
+#: main/models.py:370
+msgid "Cartlines"
+msgstr "Позиции корзины"
+
+#: payment/forms.py:5
+msgid "Regular shipping"
+msgstr "Обычная доставка"
+
+#: payment/forms.py:6
+msgid "Express delivery"
+msgstr "Экспресс доставка"
+
+#: payment/forms.py:10
+msgid "Online payment by card"
+msgstr "Онлайн картой"
+
+#: payment/forms.py:11
+msgid "Online payment from a random someone else's account"
+msgstr "Онлайн, со случайного чужого счёта"
+
+#: payment/forms.py:17 templates/payment/oneorder.html:46
+#: templates/payment/order.html:60 templates/payment/order.html:158
+msgid "Full name"
+msgstr "ФИО"
+
+#: payment/forms.py:26
+msgid "Here you can change your password"
+msgstr "Сбросить пароль"
+
+#: payment/forms.py:29
+msgid "Please re-enter your password"
+msgstr "Пожалуйста введите ваш пароль дважды"
+
+#: payment/views.py:13
+msgid "Paid up"
+msgstr "Оплачено"
+
+#: payment/views.py:14
+msgid "Not paid"
+msgstr "Не оплачено"
+
+#: services/cart_services.py:96
+msgid "Changes applied"
+msgstr "Изменения применены"
+
+#: services/cart_services.py:112 services/cart_services.py:457
+msgid "Not enough products"
+msgstr "Не достаточно товара"
+
+#: services/cart_services.py:436
+msgid " add to cart"
+msgstr " добавить в корзину"
+
+#: services/cart_services.py:451 services/cart_services.py:460
+msgid "Incorrect value"
+msgstr "Некоректное значение"
+
+#: services/cart_services.py:454
+msgid "Products added"
+msgstr "Товар добавен"
+
+#: services/compare_services.py:131
+msgid "The wolf is not a sheep's comrade"
+msgstr "Волк овце не товарищ"
+
+#: services/compare_services.py:132
+msgid "Can't compare incomparable"
+msgstr "Нельзя сравнить несравнимое"
+
+#: services/compare_services.py:133
+msgid "These products have nothing in common"
+msgstr "У этих товаров нет ничего общего"
+
+#: services/compare_services.py:134
+msgid "A circle and a square have zero common sides"
+msgstr ""
+
+#: services/compare_services.py:135
+msgid "No common characteristics"
+msgstr "Нет общих характеристик"
+
+#: services/compare_services.py:136
+msgid "They are like sea and mountain"
+msgstr "Они похожи как море и гора"
+
+#: services/compare_services.py:137
+msgid "It is difficult to compare what cannot be compared"
+msgstr "Сложно сравнить то, что нельзя сравнить"
+
+#: services/compare_services.py:138
+msgid "They are like nitrogen and calcium - nothing in common"
+msgstr "Они как азот и кальций - ничего общего"
+
+#: services/compare_services.py:139
+msgid "Like a cat and a dog"
+msgstr "Как кошка и собака"
+
+#: services/settings_services.py:151
+msgid "Settings changed successfully"
+msgstr "Настройки успешно изменены"
+
+#: services/settings_services.py:161
+msgid "Deleted categories cache"
+msgstr "Удалён кеш категорий"
+
+#: services/settings_services.py:166
+msgid "Deleted banners cache"
+msgstr "Удалён кеш баннеров"
+
+#: services/settings_services.py:171
+msgid "Deleted shops cache"
+msgstr "Удалён кеш продавцов"
+
+#: services/settings_services.py:176
+msgid "Deleted catalog cache"
+msgstr "Удалён кеш каталога"
+
+#: services/settings_services.py:181
+msgid "Deleted product cache"
+msgstr "Удалён кеш товаров"
+
+#: setting/forms.py:9
+msgid "Categories cache duration"
+msgstr "Длительность кеша категорий"
+
+#: setting/forms.py:9 setting/forms.py:11 setting/forms.py:13
+#: setting/forms.py:15 setting/forms.py:17
+msgid "seconds"
+msgstr "секунды"
+
+#: setting/forms.py:11
+msgid "Banners cache duration"
+msgstr "Длительность кеша баннеров"
+
+#: setting/forms.py:13
+msgid "Shops cache duration"
+msgstr "Длительность кеша продавцов"
+
+#: setting/forms.py:15
+msgid "Catalog cache duration"
+msgstr "Длительность кеша каталога"
+
+#: setting/forms.py:17
+msgid "Product cache duration"
+msgstr "Длительность кеша товаров"
+
+#: setting/forms.py:19
+msgid "Delete categories cache"
+msgstr "Очистить кеш категорий"
+
+#: setting/forms.py:21
+msgid "Delete banners cache"
+msgstr "Очистить кеш баннеров"
+
+#: setting/forms.py:23
+msgid "Delete shops cache"
+msgstr "Очистить кеш магазинов"
+
+#: setting/forms.py:25
+msgid "Delete catalog cache"
+msgstr "Очистить кеш каталога"
+
+#: setting/forms.py:27
+msgid "Delete product cache"
+msgstr "Очистить кеш товаров"
+
+#: setting/forms.py:33
+msgid "The cache timeout for categories cannot be less or equal than zero!"
+msgstr "Таймаут кеширования для категорий не может быть меньше или равен нулю!"
+
+#: setting/forms.py:40
+msgid "The cache timeout for banners cannot be less or equal than zero!"
+msgstr "Таймаут кеширования для баннеров не может быть меньше или равен нулю!"
+
+#: setting/forms.py:47 setting/forms.py:68
+msgid "The cache timeout for shops cannot be less or equal than zero!"
+msgstr "Таймаут кеширования для магазинов не может быть меньше или равен нулю!"
+
+#: setting/forms.py:54
+msgid "The cache timeout for catalog cannot be less or equal than zero!"
+msgstr "Таймаут кеширования для категорий не может быть меньше или равен нулю!"
+
+#: setting/forms.py:61
+msgid "The cache timeout for product cannot be less or equal than zero!"
+msgstr "Таймаут кеширования для товаров не может быть меньше или равен нулю!"
+
+#: templates/base.html:23
+msgid "Page description"
+msgstr "Описание страницы"
+
+#: templates/base.html:57
+msgid "Free Delivery"
+msgstr "Бесплатная доставка"
+
+#: templates/base.html:59 templates/shop/shop_detail.html:87
+msgid "Follow Us"
+msgstr "Подписаться"
+
+#: templates/base.html:84
+msgid "Hello"
+msgstr "Привет"
+
+#: templates/base.html:88
+msgid "Log out"
+msgstr "Выйти"
+
+#: templates/base.html:92
+msgid "Login"
+msgstr "Вход"
+
+#: templates/base.html:94
+msgid "Register"
+msgstr "Регистрация"
+
+#: templates/base.html:139 templates/cart/cart.html:19
+#: templates/catalog/catalog_list.html:20 templates/compare/compare.html:21
+#: templates/discount/discount_detail.html:19
+#: templates/discount/discount_list.html:19 templates/payment/oneorder.html:19
+#: templates/payment/order.html:19 templates/payment/payment.html:19
+#: templates/payment/progressPayment.html:19
+#: templates/private_office/profile.html:15 templates/shop/shop_list.html:14
+msgid "Home"
+msgstr "Главная"
+
+#: templates/base.html:142
+msgid "New"
+msgstr "Новый"
+
+#: templates/base.html:148 templates/base.html:308
+msgid "Contacts"
+msgstr "Контакты"
+
+#: templates/base.html:150
+msgid "Purchase"
+msgstr "Каталог"
+
+#: templates/base.html:154
+msgid "Import"
+msgstr "Импорт"
+
+#: templates/base.html:159
+msgid "Settings"
+msgstr "Настройки"
+
+#: templates/base.html:180
+msgid "Show navigation"
+msgstr "Показать навигацию"
+
+#: templates/base.html:231
+msgid "What are you looking for ..."
+msgstr "Что вы ищете ..."
+
+#: templates/base.html:233
+msgid "Search"
+msgstr "Поиск"
+
+#: templates/base.html:251
+msgid ""
+"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy "
+"nibh euismod tincid  unt ut laoreet dolore magna aliquam erat volutpat. Ut "
+"wisi enim ad"
+msgstr ""
+
+#: templates/base.html:272
+msgid "Useful Links"
+msgstr "Полезные ссылки"
+
+#: templates/base.html:275 templates/cart/cart.html:111
+msgid "Checkout"
+msgstr "Заказ"
+
+#: templates/base.html:277
+msgid "My Cart"
+msgstr "Моя корзина"
+
+#: templates/base.html:279
+msgid "Delivery"
+msgstr "Доставка"
+
+#: templates/base.html:281
+msgid "Order Info"
+msgstr "Информация о заказе"
+
+#: templates/base.html:283
+msgid "Terms"
+msgstr "Правила"
+
+#: templates/base.html:285
+msgid "Conditions"
+msgstr "Условия"
+
+#: templates/base.html:290
+msgid "My Account"
+msgstr "Мой аккаунт"
+
+#: templates/base.html:293
+msgid "Accessories"
+msgstr "Аксессуары"
+
+#: templates/base.html:295
+msgid "Bags"
+msgstr "Сумки"
+
+#: templates/base.html:297
+msgid "Cameras"
+msgstr "Камеры"
+
+#: templates/base.html:299
+msgid "Clothings"
+msgstr "Одежда"
+
+#: templates/base.html:301
+msgid "Electronics"
+msgstr "Электроника"
+
+#: templates/base.html:303
+msgid "Fashion"
+msgstr "Мода"
+
+#: templates/base.html:310
+msgid "Skype"
+msgstr "Skype"
+
+#: templates/base.html:311
+msgid "Avenue"
+msgstr "Проспект"
+
+#: templates/base.html:320
+msgid "All rights reserved."
+msgstr "Все права защищены."
+
+#: templates/base.html:322
+msgid "Accepted Payments"
+msgstr "Платёжные системы"
+
+#: templates/cart/cart.html:62 templates/catalog/product.html:160
+msgid "Stock balance"
+msgstr "Остаток"
+
+#: templates/cart/cart.html:85
+msgid "Accept"
+msgstr "Применить"
+
+#: templates/cart/cart.html:98 templates/payment/oneorder.html:143
+#: templates/payment/order.html:241
+msgid "Total"
+msgstr "Всего"
+
+#: templates/cart/cart.html:110
+msgid "Clear cart"
+msgstr "Очистить корзину"
+
+#: templates/cart/cart_error.html:15
+msgid "Everything is OK"
+msgstr "Всё хорошо"
+
+#: templates/cart/cart_error.html:19
+msgid "Go back"
+msgstr "Вернуться"
+
+#: templates/catalog/catalog_list.html:17
+#: templates/catalog/catalog_list.html:22
+msgid "Catalog"
+msgstr "Каталог"
+
+#: templates/catalog/catalog_list.html:33
+#: templates/catalog/catalog_list.html:79
+msgid "Filter"
+msgstr "Фильтровать"
+
+#: templates/catalog/catalog_list.html:42
+#: templates/catalog/catalog_list.html:106 templates/compare/compare.html:106
+msgid "Price"
+msgstr "Цена"
+
+#: templates/catalog/catalog_list.html:68
+msgid "Only products in stock"
+msgstr "Только товары в наличии"
+
+#: templates/catalog/catalog_list.html:75
+msgid "With free shipping"
+msgstr "С бесплатной доставкой"
+
+#: templates/catalog/catalog_list.html:87
+msgid "Popular tags"
+msgstr "Популярные теги"
+
+#: templates/catalog/catalog_list.html:92
+msgid "Video"
+msgstr "Видео"
+
+#: templates/catalog/catalog_list.html:93
+msgid "Development"
+msgstr "Разработка"
+
+#: templates/catalog/catalog_list.html:94
+msgid "Gaming"
+msgstr "Игры"
+
+#: templates/catalog/catalog_list.html:95
+msgid "Asus"
+msgstr "Asus"
+
+#: templates/catalog/catalog_list.html:102
+msgid "Sort by"
+msgstr "Сортировать по"
+
+#: templates/catalog/catalog_list.html:105
+msgid "Popularity"
+msgstr "Популярность"
+
+#: templates/catalog/catalog_list.html:108
+msgid "Newness"
+msgstr "Новизна"
+
+#: templates/catalog/product.html:19 templates/password_change.html:13
+#: templates/password_change_done.html:13
+#: templates/private_office/last_products.html:20
+#: templates/private_office/private_office_list.html:16
+msgid "home"
+msgstr "главная"
+
+#: templates/catalog/product.html:86
+msgid "Choose sales"
+msgstr "Выбрать магазины"
+
+#: templates/catalog/product.html:101
+msgid "Additional Info"
+msgstr "Дополнительная информация"
+
+#: templates/catalog/product.html:133
+msgid "Value"
+msgstr "Значение"
+
+#: templates/catalog/product.html:180
+msgid "Add to cart"
+msgstr "Добавить в корзину"
+
+#: templates/catalog/product.html:185
+msgid "The product is out of stock"
+msgstr "Товара нет в наличии"
+
+#: templates/catalog/product.html:237
+msgid "Add Review"
+msgstr "Добавить отзыв"
+
+#: templates/catalog/product.html:261
+msgid "Submit Review"
+msgstr "Добавить отзыв"
+
+#: templates/compare/compare.html:5 templates/compare/compare.html:18
+#: templates/compare/compare.html:23
+msgid "Product compare"
+msgstr "Сравнение товаров"
+
+#: templates/compare/compare.html:37
+msgid "Only different characteristics"
+msgstr "Только отличающиеся характеристики"
+
+#: templates/compare/compare.html:134
+msgid "Insufficient data to compare"
+msgstr "Недостаточно данных для сравнения"
+
+#: templates/discount/discount_detail.html:30
+msgid "All shops"
+msgstr "Все магазины"
+
+#: templates/discount/discount_detail.html:33
+msgid "Discount start date"
+msgstr "Дата начала скидки"
+
+#: templates/discount/discount_detail.html:37
+msgid "Discount end date"
+msgstr "Дата окончания скидки"
+
+#: templates/discount/discount_detail.html:41
+msgid "Applied in"
+msgstr "Применяется в "
+
+#: templates/discount/discount_detail.html:49
+msgid "Discount description"
+msgstr "Описание скидки"
+
+#: templates/discount/discount_list.html:5
+msgid "Discount list"
+msgstr "Список скидок"
+
+#: templates/discount/discount_list.html:66
+msgid "There are no discounts"
+msgstr "Нет скидок"
+
+#: templates/import_files/import_page.html:5
+msgid "Import page"
+msgstr ""
+
+#: templates/import_files/import_page.html:13
+msgid "Import files"
+msgstr "Профили"
+
+#: templates/import_files/import_page.html:18
+msgid "Select files"
+msgstr "Выбрать файлы"
+
+#: templates/import_files/import_page.html:24
+#: templates/setting/settings.html:27
+msgid "Apply"
+msgstr "Применить"
+
+#: templates/login.html:3 templates/login.html:5 templates/login.html:11
+msgid "Sign in"
+msgstr "Войти"
+
+#: templates/login.html:7
+msgid "Did you forget password?"
+msgstr "Забыли пароль?"
+
+#: templates/main/banners.html:15
+msgid "Get Started"
+msgstr "Начать"
+
+#: templates/main/index.html:61
+msgid "Limited Deals"
+msgstr "Ограниченные предложения"
+
+#: templates/main/index.html:106 templates/shop/shop_detail.html:121
+msgid "Popular Products"
+msgstr "Популярные товары"
+
+#: templates/main/index.html:162
+msgid "Hot Offers"
+msgstr "Горячие предложения"
+
+#: templates/main/index.html:319 templates/shop/shop_detail.html:16
+msgid "Shipping & Returns"
+msgstr "Доставка и возврат"
+
+#: templates/main/index.html:321 templates/shop/shop_detail.html:18
+msgid "World wide shipping"
+msgstr "Доставка по всему миру"
+
+#: templates/main/index.html:331 templates/shop/shop_detail.html:28
+msgid "Money Back"
+msgstr "Возврат денег"
+
+#: templates/main/index.html:333 templates/shop/shop_detail.html:30
+msgid "Guaranted payments"
+msgstr "Гарантированные выплаты"
+
+#: templates/main/index.html:343 templates/shop/shop_detail.html:40
+msgid "Support Policy"
+msgstr "Политика поддержки"
+
+#: templates/main/index.html:345 templates/shop/shop_detail.html:42
+msgid "Fast support team"
+msgstr "Быстрая команда поддежки"
+
+#: templates/main/index.html:355 templates/shop/shop_detail.html:52
+msgid "Quality Guarantee"
+msgstr "Гарантия качества"
+
+#: templates/main/index.html:357 templates/shop/shop_detail.html:54
+msgid "Best guaranted items"
+msgstr "Лучшие гарантированные товары"
+
+#: templates/main/index.html:366
+msgid "Limited edition"
+msgstr "Ограниченный тираж"
+
+#: templates/password_change.html:3 templates/password_change.html:10
+#: templates/password_change.html:16 templates/password_change.html:55
+#: templates/password_change_done.html:16
+#: templates/private_office/profile.html:112
+msgid "Change password"
+msgstr "Сменить пароль"
+
+#: templates/password_change.html:27 templates/password_change_done.html:27
+#: templates/private_office/last_products.html:34
+#: templates/private_office/private_office_list.html:30
+#: templates/private_office/profile.html:28
+msgid "Navigation"
+msgstr "Навигация"
+
+#: templates/password_change.html:35 templates/password_change_done.html:35
+#: templates/private_office/last_products.html:42
+#: templates/private_office/private_office_list.html:5
+#: templates/private_office/private_office_list.html:13
+#: templates/private_office/private_office_list.html:19
+#: templates/private_office/private_office_list.html:38
+#: templates/private_office/profile.html:5
+#: templates/private_office/profile.html:36
+msgid "Private office"
+msgstr "Личный кабинет"
+
+#: templates/password_change.html:41 templates/password_change_done.html:41
+#: templates/private_office/last_products.html:49
+#: templates/private_office/private_office_list.html:44
+#: templates/private_office/private_office_list.html:84
+#: templates/private_office/profile.html:43
+msgid "Orders history"
+msgstr "История заказов"
+
+#: templates/password_change.html:44 templates/password_change_done.html:44
+#: templates/private_office/last_products.html:53
+#: templates/private_office/private_office_list.html:47
+#: templates/private_office/private_office_list.html:123
+#: templates/private_office/profile.html:46
+msgid "Browsing history"
+msgstr "История просмотров"
+
+#: templates/password_change_done.html:3
+msgid "Successfully"
+msgstr "Успешно"
+
+#: templates/password_change_done.html:10
+msgid "Password changed successfully"
+msgstr "Пароль успешно изменён"
+
+#: templates/password_change_done.html:52
+msgid "Congratulations!"
+msgstr "Поздравляем!"
+
+#: templates/password_change_done.html:53
+msgid "Your password has been changed successfully!"
+msgstr "Ваш пароль успешно изменён"
+
+#: templates/password_reset_complete.html:3
+#: templates/password_reset_confirm.html:3
+#: templates/password_reset_confirm.html:5 templates/password_reset_done.html:3
+#: templates/password_reset_form.html:3 templates/password_reset_form.html:5
+msgid "Reset your password"
+msgstr "Сбросить пароль"
+
+#: templates/password_reset_complete.html:5
+msgid "Your password has been set"
+msgstr "Ваш пароль был установлен"
+
+#: templates/password_reset_complete.html:6
+msgid "Log in"
+msgstr "Войти"
+
+#: templates/password_reset_confirm.html:7
+msgid "Please enter your new password twice:"
+msgstr "Пожалуйста введите ваш пароль дважды"
+
+#: templates/password_reset_confirm.html:11
+msgid "Change"
+msgstr "Изменить"
+
+#: templates/password_reset_confirm.html:14
+msgid "The password reset link was invalid"
+msgstr "Ссылка для сброса пароля недействительна"
+
+#: templates/password_reset_done.html:5
+msgid "We've sent instructions to reset your password!"
+msgstr "Мы отправили инструкции по сбросу пароля!"
+
+#: templates/password_reset_form.html:6
+msgid "Enter your e-mail address to obtain a new password."
+msgstr "Введите свой адрес электронной почты, чтобы получить новый пароль."
+
+#: templates/password_reset_form.html:9
+msgid "Send e-mail"
+msgstr "Отправить e-mail"
+
+#: templates/payment/oneorder.html:5 templates/payment/order.html:5
+#: templates/payment/payment.html:5 templates/payment/progressPayment.html:5
+#: templates/private_office/private_office_list.html:79
+msgid "Order"
+msgstr "Заказ"
+
+#: templates/payment/oneorder.html:21
+msgid "Order history"
+msgstr "История заказов"
+
+#: templates/payment/oneorder.html:40
+msgid "Order date"
+msgstr "Заказ"
+
+#: templates/payment/oneorder.html:66 templates/payment/order.html:178
+#: templates/private_office/private_office_list.html:89
+msgid "Delivery type"
+msgstr "Метод доставки"
+
+#: templates/payment/oneorder.html:72 templates/payment/order.html:115
+#: templates/payment/order.html:184
+msgid "City"
+msgstr "Город"
+
+#: templates/payment/oneorder.html:78
+msgid "Adress"
+msgstr "Адрес"
+
+#: templates/payment/oneorder.html:84 templates/payment/order.html:196
+#: templates/payment/payment.html:16 templates/payment/payment.html:21
+#: templates/private_office/private_office_list.html:95
+msgid "Payment"
+msgstr "Оплата"
+
+#: templates/payment/oneorder.html:97
+
+msgid "Payment failed"
+msgstr "Оплата не удалась"
+
+#: templates/payment/oneorder.html:136
+msgid "pieces"
+msgstr "шт"
+
+#: templates/payment/oneorder.html:148 templates/payment/order.html:245
+#: templates/payment/payment.html:47
+msgid "Pay"
+msgstr "Оплата"
+
+#: templates/payment/order.html:16 templates/payment/order.html:21
+msgid "Chechout"
+msgstr "Заказ"
+
+#: templates/payment/order.html:32
+msgid "Filling progress"
+msgstr "Прогресс заполнения"
+
+#: templates/payment/order.html:37 templates/payment/order.html:54
+msgid "Step 1. User parameters"
+msgstr "Шаг 1. Параметры пользователя"
+
+#: templates/payment/order.html:39 templates/payment/order.html:101
+msgid "Step 2. Delivery method"
+msgstr "Шаг 2. Метод доставки"
+
+#: templates/payment/order.html:41 templates/payment/order.html:131
+msgid "Step 3. Payment method"
+msgstr "Шаг 3. Метод оплаты"
+
+#: templates/payment/order.html:43 templates/payment/order.html:149
+msgid "Step 4. Order confirmation"
+msgstr "Шаг 4. Подтверждение заказа"
+
+#: templates/payment/order.html:80
+msgid "Password"
+msgstr "Сменить пароль"
+
+#: templates/payment/order.html:86
+msgid "Password confirmation"
+msgstr "Подтверждение пароля"
+
+#: templates/payment/order.html:92
+msgid "I am already registered"
+msgstr "Я уже зарегистрирован"
+
+#: templates/payment/order.html:96 templates/payment/order.html:126
+#: templates/payment/order.html:144
+msgid "Next"
+msgstr "Дальше"
+
+#: templates/payment/payment.html:33
+msgid "Card number"
+msgstr "Номер карты"
+
+#: templates/payment/payment.html:39
+msgid "Account number"
+msgstr "Номер счёта"
+
+#: templates/payment/payment.html:43
+msgid "Generate a random score"
+msgstr "Сгенерировать случайный счет"
+
+#: templates/payment/progressPayment.html:16
+#: templates/payment/progressPayment.html:21
+msgid "Waiting for payment"
+msgstr "Ожидание оплаты"
+
+#: templates/payment/progressPayment.html:30
+msgid "We are waiting for confirmation of payment by the payment system"
+msgstr "Ожидаем подтверждения оплаты платёжной системой"
+
+#: templates/private_office/last_products.html:5
+#: templates/private_office/last_products.html:17
+#: templates/private_office/last_products.html:23
+msgid "Last viewed products"
+msgstr "Последние просмотренные товары"
+
+#: templates/private_office/last_products.html:62
+msgid "You haven't viewed any product yet"
+msgstr "Вы еще не просматривали ни одного товара"
+
+#: templates/private_office/private_office_list.html:69
+msgid "Edit profile"
+msgstr "Редактировать профиль"
+
+#: templates/private_office/private_office_list.html:81
+msgid "from"
+msgstr "из"
+
+#: templates/private_office/private_office_list.html:101
+msgid "Total cost"
+msgstr "Общая сумма"
+
+#: templates/private_office/private_office_list.html:166
+msgid "Go to full list"
+msgstr "К полному списку"
+
+#: templates/private_office/profile.html:61
+msgid "Avatar"
+msgstr "Аватар"
+
+#: templates/private_office/profile.html:64
+msgid "Choose avatar"
+msgstr "Выбрать аватар"
+
+#: templates/private_office/profile.html:69
+msgid "delete avatar"
+msgstr "удалить аватар"
+
+#: templates/private_office/profile.html:73
+msgid "First name"
+msgstr "Имя"
+
+#: templates/private_office/profile.html:82
+msgid "Last name"
+msgstr "Фамилия"
+
+#: templates/private_office/profile.html:89
+msgid "Patronymic"
+msgstr "Отчество"
+
+#: templates/private_office/profile.html:101
+msgid "E-mail"
+msgstr "Адрес электронной почты"
+
+#: templates/private_office/profile.html:108
+msgid "Save"
+msgstr "Сохранить"
+
+#: templates/register.html:3 templates/register.html:5
+#: templates/register.html:9
+msgid "Sign up"
+msgstr "Зарегистрироваться"
+
+#: templates/setting/settings.html:5 templates/setting/settings.html:13
+msgid "Settings page"
+msgstr "Страница настроек"
+
+#: templates/setting/settings.html:18
+msgid "Caches duration"
+msgstr "Длительность кеша"
+
+#: templates/setting/settings.html:23
+msgid "Delete caches"
+msgstr "Сбросить кешы"
+
+#: templates/shop/shop_list.html:5 templates/shop/shop_list.html:11
+#: templates/shop/shop_list.html:16
+msgid "Shop list"
+msgstr "Список магазинов"
+
+#: templates/shop/shop_list.html:37
+msgid "No shops!"
+msgstr "Нет магазинов"

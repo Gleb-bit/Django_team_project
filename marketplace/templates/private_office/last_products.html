@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block title %}{% trans 'Last viewed products' %}{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'assets/css/catalog_list.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/modal_add_to_cart.css' %}">
+{% endblock head %}
+
+{% block content %}
+    <div class="Middle Middle_top">
+        <div class="Middle-top">
+            <div class="wrap">
+                <div class="Middle-header">
+                    <h1 class="Middle-title">{% trans 'Last viewed products' %}
+                    </h1>
+                    <ul class="breadcrumbs Middle-breadcrumbs">
+                        <li class="breadcrumbs-item"><a href="{% url 'index' %}">{% trans 'home' %}</a>
+                        </li>
+                        <li class="breadcrumbs-item breadcrumbs-item_current">
+                            <span>{% trans 'Last viewed products' %}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="Section Section_column Section_columnLeft">
+            <div class="wrap">
+                <div class="Section-column">
+                    <div class="Section-columnSection">
+                        <header class="Section-header">
+                            <strong class="Section-title">{% trans 'Navigation' %}
+                            </strong>
+                        </header>
+                        <div class="Section-columnContent">
+                            <div class="NavigateProfile">
+                                <ul class="menu menu_vt">
+                                    <li class="menu-item">
+                                        <a class="menu-link"
+                                           href="{% url 'private_office' %}">{% trans 'Private office' %}</a>
+                                    </li>
+                                    <li class="menu-item"><a class="menu-link"
+                                                             href="{% url 'profile' %}">
+                                        {% trans 'Profile' %}</a>
+                                    </li>
+                                    <li class="menu-item"><a class="menu-link"
+                                                             href="{% url 'order-history' %}">{% trans 'Orders history' %}</a>
+                                    </li>
+                                    <li class="menu-item_ACTIVE menu-item">
+                                        <a class="menu-link"
+                                           href="{% url 'last_products' %}">{% trans 'Browsing history' %}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% if not last_products %}
+                    <div class="Section-content">
+                        <h1 class="Middle-title">{% trans "You haven't viewed any product yet" %}</h1>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="Section-content" style="margin-top: 20px">
+            <div class="Cards">
+                {% for last_product in last_products %}
+                    <div class="Card">
+                        <a class="Card-picture" href="{% url 'product' last_product.product.slug %}">
+                            <img src="{{ MEDIA_URL }}{{ last_product.product.img }}" alt="">
+                        </a>
+                        <div class="Card-content">
+                            <strong class="Card-title"><a href="#">{{ last_product.product.name }}</a>
+                            </strong>
+                            <div class="Card-description">
+                                <div class="Card-cost">
+                                    {% if last_product.product.is_discounted %}
+                                        <span class="Card-priceOld">${{ last_product.product.get_price }}</span>
+                                        <span class="Card-price">${{ last_product.product.get_discounted_price }}</span>
+                                    {% else %}
+                                        <span class="Card-price">${{ last_product.product.get_price }}</span>
+                                    {% endif %}
+                                </div>
+                                <div class="Card-category">{{ last_product.product.category.name }}
+                                </div>
+                                <div class="Card-hover">
+                                    <a class="Card-btn" href="{% url 'add-to-recent' last_product.product.slug %}">
+                                        <img src="{{ MEDIA_URL }}icons/card/bookmark.svg" alt="bookmark.svg"/>
+                                    </a>
+                                  <button class="Card-btn Cart-add" data-product-id="{{ last_product.product.id }}">
+                                      <img src="{{ MEDIA_URL }}icons/card/cart.svg" alt="cart.svg"/>
+                                  </button>
+                                <form method="post" action="{% url 'compare-add' last_product.product.id %}">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="next" value="{{ request.path }}">
+                                    <button class="Compare-btn" >
+                                        <img class="btn-icon" src="{{ MEDIA_URL }}icons/card/change.svg" alt="change.svg"/>
+                                    </button>
+                                </form>
+                                </div>
+                            </div>
+                        </div>
+                        {% if last_product.product.is_discounted %}
+                            <div class="Card-sale">-{{ last_product.product.get_best_discount_percent }}%
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% include 'cart/modal_add_to_cart.html' %}
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'assets/js/common.js' %}"></script>
+<script src="{% static 'assets/js/modal_add_to_cart.js' %}"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        handle_modal()
+});
+</script>
+{% endblock js %}

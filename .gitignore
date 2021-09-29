@@ -1,0 +1,17 @@
+venv/
+.idea/
+marketplace/db.sqlite3
+marketplace/dump.rdb
+marketplace/static/assets/img/users_photos/
+*probe*
+.env
+
+### Python template
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+/database.db

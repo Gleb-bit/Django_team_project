@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block title %} {% trans 'Shop list' %} {% endblock title %}
+
+{% block content %}
+    <div class="Middle-top">
+      <div class="wrap">
+        <div class="Middle-header">
+          <h1 class="Middle-title">{% trans 'Shop list' %}
+          </h1>
+          <ul class="breadcrumbs Middle-breadcrumbs">
+            <li class="breadcrumbs-item"><a href="{% url 'index' %}">{% trans 'Home' %}</a>
+            </li>
+            <li class="breadcrumbs-item breadcrumbs-item_current"><span>{% trans 'Shop list' %}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% if shop_list %}
+    <ul>
+        {% for shop in shop_list %}
+            <li>
+                <a href="{% url 'shop-detail' shop.id %}">
+                    <div style="display: flex; align-items: center;">
+                        <b style="margin: 20px ">{{ shop.name }}</b>
+                        <img src="{{ MEDIA_URL }}{{ shop.img }}" alt="{{ shop.name }}" style="width: 100px" />
+                    </div>
+                </a>
+
+            </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <h2>{% trans 'No shops!' %}</h2>
+    {% endif %}
+
+{% endblock content %}

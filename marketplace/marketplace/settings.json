@@ -1,0 +1,7 @@
+{
+    "categories_cache_timeout": 86400,
+    "banners_cache_timeout": 600,
+    "shops_cache_timeout": 86400,
+    "product_cache_timeout": 86400,
+    "catalog_cache_timeout": 86400
+}

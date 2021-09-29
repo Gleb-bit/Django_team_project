@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block title %} {% trans 'Import page' %} {% endblock title %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'assets/css/settings.css' %}">
+{% endblock head %}
+
+{% block content %}
+    <div class="settings-container">
+        <h1>{% trans 'Import files' %}</h1>
+            <form method="post" class="setting-form" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="form-container">
+                    <div class="caches-timeout__container">
+                        <h3>{%  trans 'Select files' %}</h3>
+                        {{ form.as_p }}
+
+                    </div>
+
+                </div>
+                <button>{% trans 'Apply' %}</button>
+
+            </form>
+        <p class="message">{{ message|safe }}</p>
+    </div>
+
+{% endblock content %}
+
+{% block js %}
+<script src="{% static 'assets/js/settings.js' %}"></script>
+{# # TODO эта логика тут нужна?   #}
+<script type="text/javascript">
+    $("p:has(input.caches-delete)").appendTo($(".caches-delete__container"))
+    add_all_caches_reset_input()
+</script>
+{% endblock js %}

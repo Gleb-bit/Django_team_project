@@ -1,0 +1,27 @@
+.errorlist{
+    color:red;
+}
+
+.settings-container{
+    margin: 40px;
+}
+
+.setting-form{
+    margin-bottom: 20px;
+}
+
+.message{
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 20px;
+    line-height: 1.7;
+}
+
+.form-container{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.caches-timeout__container{
+    margin-right: 100px;
+}

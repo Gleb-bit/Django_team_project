@@ -1,0 +1,23 @@
+.Card-discount-div{
+    position: relative;
+}
+
+.Discount-percent {
+  position: absolute;
+  z-index: 2;
+  right: 5px;
+  top: 5px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.2em;
+  letter-spacing: 0.65px;
+  width: 58px;
+  height: 58px;
+  padding: 5px;
+  background-color: #3cb878;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}

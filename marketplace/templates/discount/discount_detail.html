@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block title %}{{ discount.title }}{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'assets/css/discount_detail.css' %}">
+{% endblock head %}
+
+{% block content %}
+
+<div class="Middle-top">
+  <div class="wrap">
+    <div class="Middle-header">
+      <h1 class="Middle-title">{% trans 'Discounts' %}
+      </h1>
+      <ul class="breadcrumbs Middle-breadcrumbs">
+        <li class="breadcrumbs-item"><a href="{% url 'index' %}">{% trans 'Home' %}</a>
+        </li>
+        <li class="breadcrumbs-item breadcrumbs-item_current"><a href="{% url 'discount-list' %}">{% trans 'Discounts' %}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="discount-div">
+    <h1>{{ discount.title }}</h1>
+    {% trans 'All shops' as all_shops %}
+    <ul>
+        <li>
+            <span class="discount-characteristic">{% trans 'Discount start date' %}:</span>
+            {{ discount.date_start|default:discount.date_created|date:"H:i:s d.m.Y" }}
+        </li>
+        <li>
+            <span class="discount-characteristic">{% trans 'Discount end date' %}:</span>
+            {{ discount.date_end|date:"H:i:s d.m.Y" }}
+        </li>
+        <li>
+            <span class="discount-characteristic">{% trans 'Applied in' %}:</span>
+            {{ discount.shop|default:all_shops }}
+        </li>
+        <li>
+            <span class="discount-characteristic">{% trans 'Discount percentage' %}:</span>
+            {{ discount.percent }}%
+        </li>
+        <li>
+            <span class="discount-characteristic">{% trans 'Discount description' %}: </span>
+            {{ discount.description }}
+        </li>
+        <li>
+            <span class="discount-characteristic">{% trans 'Product' %}: </span>
+            <a href="{% url 'product' discount.product.slug %}">
+                {{ discount.product.name }}
+                <img class="discount-img" src="{{ MEDIA_URL }}{{ discount.product.img }}" alt="{{ discount.product.name }}"/>
+            </a>
+
+        </li>
+    </ul>
+</div>
+
+
+
+{% endblock content %}

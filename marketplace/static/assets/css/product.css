@@ -1,0 +1,17 @@
+.Compare-btn{
+    border: 0;
+}
+
+.Compare-btn:hover{
+    border-bottom: 1px solid blue;
+    cursor: pointer;
+}
+
+td{
+    border: 2px solid #f3f4f9;
+}
+
+.btn__add-to-cart{
+    margin-top: 15px;
+    margin-right: -15px;
+}

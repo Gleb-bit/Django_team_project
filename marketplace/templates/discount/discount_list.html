@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block title %}{% trans 'Discount list' %}{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'assets/css/discount_list.css' %}">
+{% endblock head %}
+
+{% block content %}
+ <div class="Middle Middle_top">
+    <div class="Middle-top">
+      <div class="wrap">
+        <div class="Middle-header">
+          <h1 class="Middle-title">{% trans 'Discounts' %}
+          </h1>
+          <ul class="breadcrumbs Middle-breadcrumbs">
+            <li class="breadcrumbs-item"><a href="{% url 'index' %}">{% trans 'Home' %}</a>
+            </li>
+            <li class="breadcrumbs-item breadcrumbs-item_current"><span>{% trans 'Discounts' %}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+ {% if discounts %}
+    <div class="Section">
+      <div class="wrap">
+        <div class="Cards Cards_blog">
+          {% for discount in discounts %}
+          <div class="Card Card-discount-div">
+            <a class="Card-picture" href="{% url 'product' discount.product.slug %}">
+              <img src="{{ MEDIA_URL }}{{ discount.product.img }}" alt="{{ discount.product.name }}"/>
+              <div class="Discount-percent">
+                  -{{ discount.percent }}%
+              </div>
+            </a>
+            <div class="Card-date">
+              <strong class="Card-date-number">{{ discount.date_start|default:discount.date_created|date:"d" }}
+              </strong>
+                <span class="Card-date-month">{{ discount.date_start|default:discount.date_created|date:"M" }}</span>
+            </div>
+            <div class="Card-date Card-date_to">
+              <strong class="Card-date-number">{{ discount.date_end|date:"d" }}
+              </strong>
+                <span class="Card-date-month">{{ discount.date_end|date:"M" }}</span>
+            </div>
+            <div class="Card-content">
+              <a href="{% url 'discount-detail' discount.id %}">
+                <strong class="Card-title">
+                    {{ discount.title }}
+                </strong>
+                <div class="Card-description">
+                    {{ discount.description }}
+                </div>
+              </a>
+
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+     {% include 'pagination.html' %}
+    {% else %}
+        <h1>{% trans 'There are no discounts' %}</h1>
+    {% endif %}
+    </div>
+  </div>
+
+{% endblock content %}

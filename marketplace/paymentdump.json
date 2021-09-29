@@ -1,0 +1,50 @@
+[
+  {
+    "model": "main.paymentmethod",
+    "pk": 3,
+    "fields": {
+      "name": "online"
+    }
+  },
+  {
+    "model": "main.paymentmethod",
+    "pk": 4,
+    "fields": {
+      "name": "someone"
+    }
+  },
+  {
+    "model": "main.deliverymethod",
+    "pk": 1,
+    "fields": {
+      "name": "regular",
+      "base_price": 2.0,
+      "extra_price": 0.0,
+      "free_shipping_threshold": 15.0
+    }
+  },
+  {
+    "model": "main.deliverymethod",
+    "pk": 2,
+    "fields": {
+      "name": "express",
+      "base_price": 2.0,
+      "extra_price": 5.0,
+      "free_shipping_threshold": 15.0
+    }
+  },
+  {
+    "model": "main.paymentstate",
+    "pk": 1,
+    "fields": {
+      "name": "payed"
+    }
+  },
+  {
+    "model": "main.paymentstate",
+    "pk": 2,
+    "fields": {
+      "name": "not payed"
+    }
+  }
+]

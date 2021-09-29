@@ -1,0 +1,15 @@
+.Compare-btn{
+    border: 0;
+    margin-left: 12px;
+}
+
+.Compare-btn:hover{
+    border-bottom: 1px solid blue;
+    cursor: pointer;
+}
+
+
+.Card-btn:hover{
+    border-bottom: 1px solid blue;
+    cursor: pointer;
+}

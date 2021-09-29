@@ -1,0 +1,20 @@
+.Cart-accept{
+    cursor: pointer;
+    height: 50px;
+    background: #3cb878;
+    color: white;
+}
+
+.Cartline-delete:hover{
+    cursor: pointer;
+    background-color: rgb(226, 117, 127);
+}
+
+.Cart-product-img{
+    width: 50px
+}
+
+.Cart-product-img-div{
+    position: relative;
+}
+

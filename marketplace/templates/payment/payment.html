@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block title %}{% trans 'Order' %}{% endblock %}
+
+{% block head %}
+
+{% endblock head %}
+
+{% block content %}
+  <div class="Middle Middle_top">
+    <div class="Middle-top">
+      <div class="wrap">
+        <div class="Middle-header">
+          <h1 class="Middle-title">{% trans 'Payment' %}
+          </h1>
+          <ul class="breadcrumbs Middle-breadcrumbs">
+            <li class="breadcrumbs-item"><a href="{% url 'index' %}">{% trans 'Home' %}</a>
+            </li>
+            <li class="breadcrumbs-item breadcrumbs-item_current"><span>{% trans 'Payment' %}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="Section">
+      <div class="wrap">
+        <form class="form Payment" action="{% url 'order-pay' %}" method="post">
+          {% csrf_token %}
+          <div class="Payment-card">
+            {% if order.payment_method.name == 'online' %}
+            <div class="form-group">
+              <label class="form-label">{% trans 'Card number' %}
+              </label>
+              <input class="form-input Payment-bill" id="numero1" name="numero1" type="text" placeholder="9999 9999" data-mask="9999 9999" data-validate="require pay"/>
+            </div>
+            {% elif order.payment_method.name == 'someone' %}
+            <div class="form-group">
+              <label class="form-label">{% trans 'Account number' %}
+              </label>
+              <input class="form-input Payment-bill" id="numero1" name="numero1" type="text" placeholder="9999 9999" data-mask="9999 9999" data-validate="require pay"/>
+            </div>
+            <div class="form-group"><a class="btn btn_success Payment-generate" href="#">{% trans 'Generate a random score' %}</a>
+            </div>
+            {% endif %}
+          </div>
+          <div class="Payment-pay">
+            <input type="submit" class="btn btn_primary" value="{% trans 'Pay' %}">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

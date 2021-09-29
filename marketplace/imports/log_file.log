@@ -1,0 +1,183 @@
+2021-09-29 18:26:01.215 | DEBUG    | main.views:get_context_data:18 - Получение контекста домашней страницы
+2021-09-29 18:26:01.215 | DEBUG    | marketplace.views:get_context_data:16 - Получение контекста набора категорий
+2021-09-29 18:26:01.215 | DEBUG    | marketplace.views:get_context_data:31 - Получение контекста сведений о корзине
+2021-09-29 18:26:01.375 | DEBUG    | main.models:create_profile:346 - Сработал create_profile
+2021-09-29 18:26:01.375 | DEBUG    | main.models:create_profile:348 - Создан Profile для username: AnonymousUser
+2021-09-29 18:26:01.479 | DEBUG    | main.models:save_user_profile:354 - Сработал save_user_profile
+2021-09-29 18:26:01.600 | DEBUG    | services.user_services:arguments_wrapper:39 - В функцию 'get_user_cart_total_amount' в параметр 'user' передан неавторизованный пользователь, заменён на объект User для работы с анонимами. Параметры вызова функции:
+args=();
+kwargs={'user': <User: AnonymousUser>}
+
+2021-09-29 18:26:01.600 | DEBUG    | services.cart_services:get_user_cart:196 - get_user_cart log
+2021-09-29 18:26:01.600 | INFO     | services.cart_services:get_user_cart:200 - У пользователя не существовало корзины, создана новая
+2021-09-29 18:26:01.749 | DEBUG    | services.cart_services:get_cart_lines:216 - get_cart_lines log
+2021-09-29 18:26:01.749 | DEBUG    | services.cart_services:get_cart_lines:217 - cart = Cart of user 'AnonymousUser' for cost 0
+2021-09-29 18:26:01.769 | DEBUG    | services.cart_services:get_user_cart:203 - cart = Cart of user 'AnonymousUser' for cost 0
+2021-09-29 18:26:01.769 | DEBUG    | services.cart_services:get_user_cart:204 - cart.cost = 0, cart.discount_cost = 0
+2021-09-29 18:26:01.769 | DEBUG    | services.user_services:arguments_wrapper:39 - В функцию 'get_user_cart_cost' в параметр 'user' передан неавторизованный пользователь, заменён на объект User для работы с анонимами. Параметры вызова функции:
+args=();
+kwargs={'user': <User: AnonymousUser>}
+
+2021-09-29 18:26:01.769 | DEBUG    | services.cart_services:get_user_cart:196 - get_user_cart log
+2021-09-29 18:26:01.773 | DEBUG    | services.cart_services:get_cart_lines:216 - get_cart_lines log
+2021-09-29 18:26:01.773 | DEBUG    | services.cart_services:get_cart_lines:217 - cart = Cart of user 'AnonymousUser' for cost 0.0
+2021-09-29 18:26:01.773 | DEBUG    | services.cart_services:get_user_cart:203 - cart = Cart of user 'AnonymousUser' for cost 0.0
+2021-09-29 18:26:01.773 | DEBUG    | services.cart_services:get_user_cart:204 - cart.cost = 0.0, cart.discount_cost = 0
+2021-09-29 18:26:01.777 | DEBUG    | services.user_services:arguments_wrapper:39 - В функцию 'get_compare_products' в параметр 'user' передан неавторизованный пользователь, заменён на объект User для работы с анонимами. Параметры вызова функции:
+args=();
+kwargs={'user': <User: AnonymousUser>}
+
+2021-09-29 18:26:09.086 | DEBUG    | main.views:get_context_data:18 - Получение контекста домашней страницы
+2021-09-29 18:26:09.086 | DEBUG    | marketplace.views:get_context_data:16 - Получение контекста набора категорий
+2021-09-29 18:26:09.086 | DEBUG    | marketplace.views:get_context_data:31 - Получение контекста сведений о корзине
+2021-09-29 18:26:09.098 | DEBUG    | services.user_services:arguments_wrapper:39 - В функцию 'get_user_cart_total_amount' в параметр 'user' передан неавторизованный пользователь, заменён на объект User для работы с анонимами. Параметры вызова функции:
+args=();
+kwargs={'user': <User: AnonymousUser>}
+
+2021-09-29 18:26:09.102 | DEBUG    | services.cart_services:get_user_cart:196 - get_user_cart log
+2021-09-29 18:26:09.102 | DEBUG    | services.cart_services:get_cart_lines:216 - get_cart_lines log
+2021-09-29 18:26:09.106 | DEBUG    | services.cart_services:get_cart_lines:217 - cart = Cart of user 'AnonymousUser' for cost 0.0
+2021-09-29 18:26:09.106 | DEBUG    | services.cart_services:get_user_cart:203 - cart = Cart of user 'AnonymousUser' for cost 0.0
+2021-09-29 18:26:09.106 | DEBUG    | services.cart_services:get_user_cart:204 - cart.cost = 0.0, cart.discount_cost = 0
+2021-09-29 18:26:09.110 | DEBUG    | services.user_services:arguments_wrapper:39 - В функцию 'get_user_cart_cost' в параметр 'user' передан неавторизованный пользователь, заменён на объект User для работы с анонимами. Параметры вызова функции:
+args=();
+kwargs={'user': <User: AnonymousUser>}
+
+2021-09-29 18:26:09.110 | DEBUG    | services.cart_services:get_user_cart:196 - get_user_cart log
+2021-09-29 18:26:09.110 | DEBUG    | services.cart_services:get_cart_lines:216 - get_cart_lines log
+2021-09-29 18:26:09.114 | DEBUG    | services.cart_services:get_cart_lines:217 - cart = Cart of user 'AnonymousUser' for cost 0.0
+2021-09-29 18:26:09.114 | DEBUG    | services.cart_services:get_user_cart:203 - cart = Cart of user 'AnonymousUser' for cost 0.0
+2021-09-29 18:26:09.114 | DEBUG    | services.cart_services:get_user_cart:204 - cart.cost = 0.0, cart.discount_cost = 0
+2021-09-29 18:26:09.114 | DEBUG    | services.user_services:arguments_wrapper:39 - В функцию 'get_compare_products' в параметр 'user' передан неавторизованный пользователь, заменён на объект User для работы с анонимами. Параметры вызова функции:
+args=();
+kwargs={'user': <User: AnonymousUser>}
+
+2021-09-29 18:26:37.255 | DEBUG    | main.models:create_profile:346 - Сработал create_profile
+2021-09-29 18:26:37.267 | DEBUG    | main.models:create_profile:348 - Создан Profile для username: admin
+2021-09-29 18:26:37.408 | DEBUG    | main.models:save_user_profile:354 - Сработал save_user_profile
+2021-09-29 18:26:52.493 | DEBUG    | main.models:create_profile:346 - Сработал create_profile
+2021-09-29 18:26:52.497 | DEBUG    | main.models:save_user_profile:354 - Сработал save_user_profile
+2021-09-29 18:26:52.731 | INFO     | cart.views:get:69 - Вызываем вливание корзины анонимного пользователя в корзину пользователя 'admin'
+2021-09-29 18:26:52.731 | DEBUG    | services.cart_services:merge_anonymous_user_cart_into_user_cart:270 - merge_anonymous_user_cart_into_user_cart log
+2021-09-29 18:26:52.731 | DEBUG    | services.cart_services:get_user_cart:196 - get_user_cart log
+2021-09-29 18:26:52.735 | DEBUG    | services.cart_services:get_cart_lines:216 - get_cart_lines log
+2021-09-29 18:26:52.735 | DEBUG    | services.cart_services:get_cart_lines:217 - cart = Cart of user 'AnonymousUser' for cost 0.0
+2021-09-29 18:26:52.735 | DEBUG    | services.cart_services:get_user_cart:203 - cart = Cart of user 'AnonymousUser' for cost 0.0
+2021-09-29 18:26:52.735 | DEBUG    | services.cart_services:get_user_cart:204 - cart.cost = 0.0, cart.discount_cost = 0
+2021-09-29 18:26:52.739 | INFO     | services.cart_services:merge_anonymous_user_cart_into_user_cart:276 - У неавторизованного пользователя нет позиций в корзине, выходим
+2021-09-29 18:26:52.739 | DEBUG    | cart.views:get:71 - Redirect на index
+2021-09-29 18:26:52.747 | DEBUG    | main.views:get_context_data:18 - Получение контекста домашней страницы
+2021-09-29 18:26:52.747 | DEBUG    | marketplace.views:get_context_data:16 - Получение контекста набора категорий
+2021-09-29 18:26:52.747 | DEBUG    | marketplace.views:get_context_data:31 - Получение контекста сведений о корзине
+2021-09-29 18:26:52.751 | DEBUG    | services.cart_services:get_user_cart:196 - get_user_cart log
+2021-09-29 18:26:52.751 | INFO     | services.cart_services:get_user_cart:200 - У пользователя не существовало корзины, создана новая
+2021-09-29 18:26:52.847 | DEBUG    | services.cart_services:get_cart_lines:216 - get_cart_lines log
+2021-09-29 18:26:52.847 | DEBUG    | services.cart_services:get_cart_lines:217 - cart = Cart of user 'admin' for cost 0
+2021-09-29 18:26:52.851 | DEBUG    | services.cart_services:get_user_cart:203 - cart = Cart of user 'admin' for cost 0
+2021-09-29 18:26:52.851 | DEBUG    | services.cart_services:get_user_cart:204 - cart.cost = 0, cart.discount_cost = 0
+2021-09-29 18:26:52.851 | DEBUG    | services.cart_services:get_user_cart:196 - get_user_cart log
+2021-09-29 18:26:52.851 | DEBUG    | services.cart_services:get_cart_lines:216 - get_cart_lines log
+2021-09-29 18:26:52.855 | DEBUG    | services.cart_services:get_cart_lines:217 - cart = Cart of user 'admin' for cost 0.0
+2021-09-29 18:26:52.855 | DEBUG    | services.cart_services:get_user_cart:203 - cart = Cart of user 'admin' for cost 0.0
+2021-09-29 18:26:52.855 | DEBUG    | services.cart_services:get_user_cart:204 - cart.cost = 0.0, cart.discount_cost = 0
+2021-09-29 18:26:56.155 | DEBUG    | marketplace.views:get_context_data:16 - Получение контекста набора категорий
+2021-09-29 18:26:56.155 | DEBUG    | marketplace.views:get_context_data:31 - Получение контекста сведений о корзине
+2021-09-29 18:26:56.163 | DEBUG    | services.cart_services:get_user_cart:196 - get_user_cart log
+2021-09-29 18:26:56.167 | DEBUG    | services.cart_services:get_cart_lines:216 - get_cart_lines log
+2021-09-29 18:26:56.167 | DEBUG    | services.cart_services:get_cart_lines:217 - cart = Cart of user 'admin' for cost 0.0
+2021-09-29 18:26:56.167 | DEBUG    | services.cart_services:get_user_cart:203 - cart = Cart of user 'admin' for cost 0.0
+2021-09-29 18:26:56.167 | DEBUG    | services.cart_services:get_user_cart:204 - cart.cost = 0.0, cart.discount_cost = 0
+2021-09-29 18:26:56.167 | DEBUG    | services.cart_services:get_user_cart:196 - get_user_cart log
+2021-09-29 18:26:56.171 | DEBUG    | services.cart_services:get_cart_lines:216 - get_cart_lines log
+2021-09-29 18:26:56.171 | DEBUG    | services.cart_services:get_cart_lines:217 - cart = Cart of user 'admin' for cost 0.0
+2021-09-29 18:26:56.171 | DEBUG    | services.cart_services:get_user_cart:203 - cart = Cart of user 'admin' for cost 0.0
+2021-09-29 18:26:56.171 | DEBUG    | services.cart_services:get_user_cart:204 - cart.cost = 0.0, cart.discount_cost = 0
+2021-09-29 18:27:38.082 | DEBUG    | marketplace.views:get_context_data:16 - Получение контекста набора категорий
+2021-09-29 18:27:38.082 | DEBUG    | marketplace.views:get_context_data:31 - Получение контекста сведений о корзине
+2021-09-29 18:27:38.086 | DEBUG    | services.cart_services:get_user_cart:196 - get_user_cart log
+2021-09-29 18:27:38.087 | DEBUG    | services.cart_services:get_cart_lines:216 - get_cart_lines log
+2021-09-29 18:27:38.088 | DEBUG    | services.cart_services:get_cart_lines:217 - cart = Cart of user 'admin' for cost 0.0
+2021-09-29 18:27:38.089 | DEBUG    | services.cart_services:get_user_cart:203 - cart = Cart of user 'admin' for cost 0.0
+2021-09-29 18:27:38.089 | DEBUG    | services.cart_services:get_user_cart:204 - cart.cost = 0.0, cart.discount_cost = 0
+2021-09-29 18:27:38.090 | DEBUG    | services.cart_services:get_user_cart:196 - get_user_cart log
+2021-09-29 18:27:38.091 | DEBUG    | services.cart_services:get_cart_lines:216 - get_cart_lines log
+2021-09-29 18:27:38.093 | DEBUG    | services.cart_services:get_cart_lines:217 - cart = Cart of user 'admin' for cost 0.0
+2021-09-29 18:27:38.094 | DEBUG    | services.cart_services:get_user_cart:203 - cart = Cart of user 'admin' for cost 0.0
+2021-09-29 18:27:38.095 | DEBUG    | services.cart_services:get_user_cart:204 - cart.cost = 0.0, cart.discount_cost = 0
+2021-09-29 18:29:20.821 | DEBUG    | marketplace.views:get_context_data:16 - Получение контекста набора категорий
+2021-09-29 18:29:20.821 | DEBUG    | marketplace.views:get_context_data:31 - Получение контекста сведений о корзине
+2021-09-29 18:29:20.825 | DEBUG    | services.cart_services:get_user_cart:196 - get_user_cart log
+2021-09-29 18:29:20.825 | DEBUG    | services.cart_services:get_cart_lines:216 - get_cart_lines log
+2021-09-29 18:29:20.829 | DEBUG    | services.cart_services:get_cart_lines:217 - cart = Cart of user 'admin' for cost 0.0
+2021-09-29 18:29:20.829 | DEBUG    | services.cart_services:get_user_cart:203 - cart = Cart of user 'admin' for cost 0.0
+2021-09-29 18:29:20.829 | DEBUG    | services.cart_services:get_user_cart:204 - cart.cost = 0.0, cart.discount_cost = 0
+2021-09-29 18:29:20.829 | DEBUG    | services.cart_services:get_user_cart:196 - get_user_cart log
+2021-09-29 18:29:20.833 | DEBUG    | services.cart_services:get_cart_lines:216 - get_cart_lines log
+2021-09-29 18:29:20.833 | DEBUG    | services.cart_services:get_cart_lines:217 - cart = Cart of user 'admin' for cost 0.0
+2021-09-29 18:29:20.833 | DEBUG    | services.cart_services:get_user_cart:203 - cart = Cart of user 'admin' for cost 0.0
+2021-09-29 18:29:20.833 | DEBUG    | services.cart_services:get_user_cart:204 - cart.cost = 0.0, cart.discount_cost = 0
+2021-09-29 19:12:32.069 | DEBUG    | main.models:create_profile:346 - Сработал create_profile
+2021-09-29 19:12:32.076 | DEBUG    | main.models:create_profile:348 - Создан Profile для username: gleb1
+2021-09-29 19:12:32.210 | DEBUG    | main.models:save_user_profile:354 - Сработал save_user_profile
+2021-09-29 19:43:30.377 | DEBUG    | main.views:get_context_data:18 - Получение контекста домашней страницы
+2021-09-29 19:43:30.378 | DEBUG    | marketplace.views:get_context_data:16 - Получение контекста набора категорий
+2021-09-29 19:43:30.379 | DEBUG    | marketplace.views:get_context_data:31 - Получение контекста сведений о корзине
+2021-09-29 19:43:30.416 | DEBUG    | services.user_services:arguments_wrapper:39 - В функцию 'get_user_cart_total_amount' в параметр 'user' передан неавторизованный пользователь, заменён на объект User для работы с анонимами. Параметры вызова функции:
+args=();
+kwargs={'user': <User: AnonymousUser>}
+
+2021-09-29 19:43:30.416 | DEBUG    | services.cart_services:get_user_cart:196 - get_user_cart log
+2021-09-29 19:43:30.449 | DEBUG    | services.cart_services:get_cart_lines:216 - get_cart_lines log
+2021-09-29 19:43:30.450 | DEBUG    | services.cart_services:get_cart_lines:217 - cart = Cart of user 'AnonymousUser' for cost 0.0
+2021-09-29 19:43:30.465 | DEBUG    | services.cart_services:get_user_cart:203 - cart = Cart of user 'AnonymousUser' for cost 0.0
+2021-09-29 19:43:30.466 | DEBUG    | services.cart_services:get_user_cart:204 - cart.cost = 0.0, cart.discount_cost = 0
+2021-09-29 19:43:30.471 | DEBUG    | services.user_services:arguments_wrapper:39 - В функцию 'get_user_cart_cost' в параметр 'user' передан неавторизованный пользователь, заменён на объект User для работы с анонимами. Параметры вызова функции:
+args=();
+kwargs={'user': <User: AnonymousUser>}
+
+2021-09-29 19:43:30.471 | DEBUG    | services.cart_services:get_user_cart:196 - get_user_cart log
+2021-09-29 19:43:30.472 | DEBUG    | services.cart_services:get_cart_lines:216 - get_cart_lines log
+2021-09-29 19:43:30.474 | DEBUG    | services.cart_services:get_cart_lines:217 - cart = Cart of user 'AnonymousUser' for cost 0.0
+2021-09-29 19:43:30.475 | DEBUG    | services.cart_services:get_user_cart:203 - cart = Cart of user 'AnonymousUser' for cost 0.0
+2021-09-29 19:43:30.475 | DEBUG    | services.cart_services:get_user_cart:204 - cart.cost = 0.0, cart.discount_cost = 0
+2021-09-29 19:43:30.476 | DEBUG    | services.user_services:arguments_wrapper:39 - В функцию 'get_compare_products' в параметр 'user' передан неавторизованный пользователь, заменён на объект User для работы с анонимами. Параметры вызова функции:
+args=();
+kwargs={'user': <User: AnonymousUser>}
+
+2021-09-29 19:43:41.692 | DEBUG    | main.models:create_profile:346 - Сработал create_profile
+2021-09-29 19:43:41.693 | DEBUG    | main.models:save_user_profile:354 - Сработал save_user_profile
+2021-09-29 19:43:41.958 | INFO     | cart.views:get:69 - Вызываем вливание корзины анонимного пользователя в корзину пользователя 'gleb1'
+2021-09-29 19:43:41.959 | DEBUG    | services.cart_services:merge_anonymous_user_cart_into_user_cart:270 - merge_anonymous_user_cart_into_user_cart log
+2021-09-29 19:43:41.960 | DEBUG    | services.cart_services:get_user_cart:196 - get_user_cart log
+2021-09-29 19:43:41.962 | DEBUG    | services.cart_services:get_cart_lines:216 - get_cart_lines log
+2021-09-29 19:43:41.965 | DEBUG    | services.cart_services:get_cart_lines:217 - cart = Cart of user 'AnonymousUser' for cost 0.0
+2021-09-29 19:43:41.967 | DEBUG    | services.cart_services:get_user_cart:203 - cart = Cart of user 'AnonymousUser' for cost 0.0
+2021-09-29 19:43:41.967 | DEBUG    | services.cart_services:get_user_cart:204 - cart.cost = 0.0, cart.discount_cost = 0
+2021-09-29 19:43:41.969 | INFO     | services.cart_services:merge_anonymous_user_cart_into_user_cart:276 - У неавторизованного пользователя нет позиций в корзине, выходим
+2021-09-29 19:43:41.969 | DEBUG    | cart.views:get:71 - Redirect на index
+2021-09-29 19:43:41.975 | DEBUG    | main.views:get_context_data:18 - Получение контекста домашней страницы
+2021-09-29 19:43:41.975 | DEBUG    | marketplace.views:get_context_data:16 - Получение контекста набора категорий
+2021-09-29 19:43:41.976 | DEBUG    | marketplace.views:get_context_data:31 - Получение контекста сведений о корзине
+2021-09-29 19:43:41.984 | DEBUG    | services.cart_services:get_user_cart:196 - get_user_cart log
+2021-09-29 19:43:41.985 | INFO     | services.cart_services:get_user_cart:200 - У пользователя не существовало корзины, создана новая
+2021-09-29 19:43:42.089 | DEBUG    | services.cart_services:get_cart_lines:216 - get_cart_lines log
+2021-09-29 19:43:42.089 | DEBUG    | services.cart_services:get_cart_lines:217 - cart = Cart of user 'gleb1' for cost 0
+2021-09-29 19:43:42.090 | DEBUG    | services.cart_services:get_user_cart:203 - cart = Cart of user 'gleb1' for cost 0
+2021-09-29 19:43:42.091 | DEBUG    | services.cart_services:get_user_cart:204 - cart.cost = 0, cart.discount_cost = 0
+2021-09-29 19:43:42.092 | DEBUG    | services.cart_services:get_user_cart:196 - get_user_cart log
+2021-09-29 19:43:42.093 | DEBUG    | services.cart_services:get_cart_lines:216 - get_cart_lines log
+2021-09-29 19:43:42.094 | DEBUG    | services.cart_services:get_cart_lines:217 - cart = Cart of user 'gleb1' for cost 0.0
+2021-09-29 19:43:42.095 | DEBUG    | services.cart_services:get_user_cart:203 - cart = Cart of user 'gleb1' for cost 0.0
+2021-09-29 19:43:42.095 | DEBUG    | services.cart_services:get_user_cart:204 - cart.cost = 0.0, cart.discount_cost = 0
+2021-09-29 19:43:45.034 | DEBUG    | marketplace.views:get_context_data:16 - Получение контекста набора категорий
+2021-09-29 19:43:45.035 | DEBUG    | marketplace.views:get_context_data:31 - Получение контекста сведений о корзине
+2021-09-29 19:43:45.049 | DEBUG    | services.cart_services:get_user_cart:196 - get_user_cart log
+2021-09-29 19:43:45.050 | DEBUG    | services.cart_services:get_cart_lines:216 - get_cart_lines log
+2021-09-29 19:43:45.051 | DEBUG    | services.cart_services:get_cart_lines:217 - cart = Cart of user 'gleb1' for cost 0.0
+2021-09-29 19:43:45.052 | DEBUG    | services.cart_services:get_user_cart:203 - cart = Cart of user 'gleb1' for cost 0.0
+2021-09-29 19:43:45.052 | DEBUG    | services.cart_services:get_user_cart:204 - cart.cost = 0.0, cart.discount_cost = 0
+2021-09-29 19:43:45.053 | DEBUG    | services.cart_services:get_user_cart:196 - get_user_cart log
+2021-09-29 19:43:45.054 | DEBUG    | services.cart_services:get_cart_lines:216 - get_cart_lines log
+2021-09-29 19:43:45.056 | DEBUG    | services.cart_services:get_cart_lines:217 - cart = Cart of user 'gleb1' for cost 0.0
+2021-09-29 19:43:45.058 | DEBUG    | services.cart_services:get_user_cart:203 - cart = Cart of user 'gleb1' for cost 0.0
+2021-09-29 19:43:45.058 | DEBUG    | services.cart_services:get_user_cart:204 - cart.cost = 0.0, cart.discount_cost = 0

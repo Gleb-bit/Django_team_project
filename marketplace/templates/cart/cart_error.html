@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'assets/css/cart_error.css' %}">
+{% endblock head %}
+
+{% block content %}
+<div class="content">
+    <h3 class="message">
+        {% if message %}
+            {{ message }}
+        {% else %}
+            {% trans 'Everything is OK' %}
+        {% endif %}
+    </h3>
+    <a href="{% if back_url %}{{ back_url }} {% else %} {% url 'index' %} {% endif %}" class="back-url">
+        {% trans 'Go back' %}
+    </a>
+</div>
+
+
+{% endblock content %}
