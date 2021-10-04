@@ -2,6 +2,8 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth.views import PasswordChangeView, PasswordChangeDoneView
 from django.shortcuts import redirect
 from django.views.generic import CreateView
+from django.contrib.auth.views import LogoutView, PasswordResetView, PasswordResetDoneView, PasswordResetConfirmView, \
+    PasswordResetCompleteView, LoginView
 from django.views.generic import TemplateView
 from loguru import logger
 
@@ -49,3 +51,33 @@ class OurPasswordChangeDoneView(BaseMixin, PasswordChangeDoneView):
     """Представление для кастомного подтверждения смены пароля"""
 
     template_name = 'password_change_done.html'
+
+
+class OurPasswordResetView(BaseMixin, PasswordResetView):
+    """Представление для кастомного сброса пароля"""
+
+    template_name = 'password_reset_form.html'
+
+
+class OurPasswordResetDoneView(BaseMixin, PasswordResetDoneView):
+    """Представление для кастомного запроса сброса пароля"""
+
+    template_name = 'password_reset_done.html'
+
+
+class OurPasswordResetConfirmView(BaseMixin, PasswordResetConfirmView):
+    """Представление для кастомного подтверждения сброса пароля"""
+
+    template_name = 'password_reset_confirm.html'
+
+
+class OurPasswordResetCompleteView(BaseMixin, PasswordResetCompleteView):
+    """Представление для кастомного завершения сброса пароля"""
+
+    template_name = 'password_reset_complete.html'
+
+
+class OurLoginView(BaseMixin, LoginView):
+    """Представление для кастомной входа в аккаунт"""
+
+    template_name = 'login.html'
